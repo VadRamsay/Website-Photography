@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Montserrat, sans-serif;
     font-weight: 100;
 
 }
@@ -16,16 +13,10 @@ body {
 
 header {
     width: 100%;
-    background: rgb(39, 39, 39);
+    background: #272727;
     position: sticky;
-    top: 0px;
-    z-index: 10;
-}
-
-.logo {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
+    top: 0;
+    z-index: 50;
 }
 
 nav {
@@ -33,7 +24,16 @@ nav {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding: 35px;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
 }
 
 nav ul {
@@ -45,15 +45,14 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
+    color: #fff;
+    font-weight: 400;
+    transition: color 0.3s ease;
 }
 
-nav a.active {
-    border-bottom: 2px solid #000;
+nav a:hover {
+    color: #1e3f66;
 }
-
-/*Contact Form*/
 
 .contact-page {
     max-width: 600px;
@@ -109,6 +108,20 @@ nav a.active {
 
 .contact-form button:hover {
     background-color: #444;
+}
+
+#thank-you {
+    background: #ffd0d0;
+    color: #2c2c2c;
+    padding: 15px;
+    margin: 120px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.hidden {
+    display: none;
 }
 
 footer {
