@@ -13,4 +13,4 @@ Ideas for future improvement (minimum of 3):
 
 - This has responsive actions for PC, but not for mobile. 
 - Unpon choosing the package that the person wants, maybe have a page that could go go through the process of payment online. 
-- 
+- Visuals could be an improvment. 
