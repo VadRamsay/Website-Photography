@@ -10,7 +10,7 @@ const pages = [
 
 function executeSearch() {
     const query = document.getElementById('site-search').value.toLowerCase();
-    const resultsContainer = document.getElementById('site-results-dropdown');
+    const resultsContainer = document.getElementById('search-results-dropdown');
 
     resultsContainer.innerHTML = '';
 
@@ -38,8 +38,7 @@ function executeSearch() {
     }
 }
 
-// Closing the search if clicked outside
-document.addElementListener('click', (e) => {
+document.addEventListener('click', (e) => {
     if (!document.querySelector('.search-site').contains(e.target)) {
         document.getElementById('search-results-dropdown').style.display = 'none';
     }
