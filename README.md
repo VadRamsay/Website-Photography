@@ -1,5 +1,3 @@
-# Slav Photography:
-
 Developed by Gabriel Ramsay, Slav Photography is a clean, professional web platform designed for clients to browse a portfolio, explore service packages, and seamlessly book photography sessions.
 
 ## Project Overview:
