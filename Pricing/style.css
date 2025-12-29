@@ -39,6 +39,8 @@ nav ul {
     display: flex;
     gap: 25px;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
@@ -53,7 +55,7 @@ nav a:hover {
 }
 
 .page-container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: auto;
     padding: 0 40px;
 }

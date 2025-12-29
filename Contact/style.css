@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-weight: 100;
-
 }
 
 body {
     background: #fdfdfd;
     color: #222;
+    font-family: sans-serif;
 }
 
 header {
@@ -17,11 +17,12 @@ header {
     position: sticky;
     top: 0;
     z-index: 50;
+    display: flex;
+    justify-content: center;
 }
 
 nav {
-    max-width: 1200px;
-    margin: auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,6 +42,8 @@ nav ul {
     display: flex;
     gap: 25px;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
@@ -55,16 +58,17 @@ nav a:hover {
 }
 
 .page-container {
-    max-width: 1400px;
-    margin: auto;
-    padding: 0 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .contact-page {
     max-width: 600px;
     margin: 100px auto;
     background: #ffffff;
-    padding: 20px;
+    padding: 40px;
     border-radius: 6px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
@@ -72,14 +76,22 @@ nav a:hover {
 .contact-page h1 {
     text-align: center;
     font-size: 28px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     letter-spacing: 2px;
     color: #111;
+    font-weight: 400;
+}
+
+/* --- Form Elements --- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    /* This allows us to center the button easily */
 }
 
 .contact-form label {
     display: block;
-    margin-top: 14px;
+    margin-top: 20px;
     font-size: 14px;
     font-weight: 600;
     color: #333;
@@ -89,33 +101,68 @@ nav a:hover {
 .contact-form select,
 .contact-form textarea {
     width: 100%;
-    padding: 0%;
-    margin-top: 20px;
+    padding: 12px;
+    /* Changed from 0% to give text breathing room */
+    margin-top: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
     font-family: inherit;
+    font-weight: 400;
 }
 
 .contact-form textarea {
     resize: vertical;
 }
 
-.contact-form button {
+/* --- The Button (Positioning & Icon) --- */
+.contact-form button.submit {
+    display: block;
     width: 75%;
-    padding: 12px;
-    margin-top: 10px;
-    background-color: #151f49c9;
+    margin: 40px auto 0;
+    /* Centers button horizontally */
+    padding: 14px 20px;
+
+    /* Gradient Background */
+    background: linear-gradient(45deg, #151f49c9, #2a3b8f);
     color: #ffffff;
+    border: none;
     border-radius: 4px;
     font-size: 14px;
-    transition: background-color 0.4s ease;
+    font-weight: 600;
+    cursor: pointer;
+
+    /* Smooth Transitions */
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
 }
 
-.contact-form button:hover {
-    background-color: #444;
+/* Hover State: Change Gradient */
+.contact-form button.submit:hover {
+    background: linear-gradient(45deg, #444, #111);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding-right: 45px;
+    /* Shift text to make room for icon */
 }
 
+/* The Reveal Icon (using a Unicode Arrow) */
+.contact-form button.submit::after {
+    content: '→';
+    position: absolute;
+    right: -20px;
+    /* Hidden off-side */
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.contact-form button.submit:hover::after {
+    right: 25px;
+    /* Slides into view */
+    opacity: 1;
+}
+
+/* --- Thank You Message --- */
 #thank-you {
     background: #ffd0d0;
     color: #2c2c2c;
@@ -130,6 +177,7 @@ nav a:hover {
     display: none;
 }
 
+/* --- Footer --- */
 footer {
     text-align: center;
     padding: 30px;
