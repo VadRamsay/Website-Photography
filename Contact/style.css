@@ -14,7 +14,7 @@ body {
 header {
     width: 100%;
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(78, 78, 78) 35%, rgba(89, 89, 89, 1) 100%);
-    position: sticky;
+    position: flex;
     top: 0;
     z-index: 50;
     display: flex;
@@ -54,6 +54,57 @@ nav a {
 }
 
 nav a:hover {
+    color: #1e3f66;
+}
+
+.search-bar {
+    position: relative;
+}
+
+#site-search {
+    padding: 6px 15px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    background: rgba(78, 78, 78, 0.1);
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease;
+    width: 160px;
+}
+
+#site-search:focus {
+    background: white;
+    color: #222;
+    width: 180px;
+}
+
+#site-search::placeholder {
+    color: #ddd;
+}
+
+.search-results {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 250px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.search-item {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.search-item:hover {
+    background: #f8f9fa;
     color: #1e3f66;
 }
 

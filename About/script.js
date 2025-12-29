@@ -1,8 +1,3 @@
-document.querySelector(".contact-form").addEventListener("submit", function (e) {
-    e.preventDefault(); // prevents page reload
-    document.getElementById("thank-you").classList.remove("hidden");
-});
-
 // Search Bar:
 
 const pages = [
@@ -44,7 +39,8 @@ function executeSearch() {
 }
 
 document.addEventListener('click', (e) => {
-    if (!document.querySelector('.search-site').contains(e.target)) {
+    const searchContainer = document.querySelector('.search-site');
+    if (searchContainer && !searchContainer.contains(e.target)) {
         document.getElementById('search-results-dropdown').style.display = 'none';
     }
 });
