@@ -4,7 +4,7 @@ Project Overview:
 
 This project serves as a digital storefront for a professional photographer. It balances a minimalist aesthetic with functional utility, focusing on a streamlined contact interface and a visual-first portfolio experience.
 
-Functionality:
+*Functionality:*
 
 Dynamic Portfolio: A curated look at past photography work.
 
