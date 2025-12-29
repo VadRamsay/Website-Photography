@@ -43,6 +43,7 @@ nav ul {
     display: flex;
     gap: 30px;
     align-items: center;
+    margin-bottom: 0;
 }
 
 nav a {
@@ -115,14 +116,4 @@ nav a:hover {
 .search-item:hover {
     background: #f8f9fa;
     color: #1e3f66;
-}
-
-.btn-style {
-    display: inline-block;
-    padding: 12px 35px;
-    background: #1a1a1a;
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 2px;
-    text-transform: uppercase;
 }

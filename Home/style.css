@@ -79,8 +79,22 @@
     border-radius: 4px;
 }
 
-.btn:hover {
-    color: orange;
+.btn-contact {
+    display: inline-block;
+    padding: 12px 35px;
+    background: #1a1a1a;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s, opacity 0.3s;
+}
+
+.btn-contact:hover {
+    background: #333;
+    opacity: 0.9;
 }
 
 footer {
