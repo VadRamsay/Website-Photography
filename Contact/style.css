@@ -82,11 +82,10 @@ nav a:hover {
     font-weight: 400;
 }
 
-/* --- Form Elements --- */
 .contact-form {
     display: flex;
     flex-direction: column;
-    /* This allows us to center the button easily */
+    /* This allows us to center the button easier */
 }
 
 .contact-form label {
@@ -101,8 +100,7 @@ nav a:hover {
 .contact-form select,
 .contact-form textarea {
     width: 100%;
-    padding: 12px;
-    /* Changed from 0% to give text breathing room */
+    padding: 10px;
     margin-top: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -115,15 +113,12 @@ nav a:hover {
     resize: vertical;
 }
 
-/* --- The Button (Positioning & Icon) --- */
 .contact-form button.submit {
     display: block;
     width: 75%;
     margin: 40px auto 0;
-    /* Centers button horizontally */
     padding: 14px 20px;
 
-    /* Gradient Background */
     background: linear-gradient(45deg, #151f49c9, #2a3b8f);
     color: #ffffff;
     border: none;
@@ -132,37 +127,34 @@ nav a:hover {
     font-weight: 600;
     cursor: pointer;
 
-    /* Smooth Transitions */
+    /* Transitions */
     position: relative;
     overflow: hidden;
     transition: all 0.4s ease;
 }
 
-/* Hover State: Change Gradient */
 .contact-form button.submit:hover {
-    background: linear-gradient(45deg, #444, #111);
+    background: linear-gradient(45deg, #7a7a7a, #111);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     padding-right: 45px;
     /* Shift text to make room for icon */
 }
 
-/* The Reveal Icon (using a Unicode Arrow) */
+/* The Icon (using an arrow) */
 .contact-form button.submit::after {
     content: '→';
     position: absolute;
     right: -20px;
-    /* Hidden off-side */
     opacity: 0;
     transition: all 0.4s ease;
 }
 
 .contact-form button.submit:hover::after {
     right: 25px;
-    /* Slides into view */
     opacity: 1;
+    /* Slides into view */
 }
 
-/* --- Thank You Message --- */
 #thank-you {
     background: #ffd0d0;
     color: #2c2c2c;
@@ -177,7 +169,6 @@ nav a:hover {
     display: none;
 }
 
-/* --- Footer --- */
 footer {
     text-align: center;
     padding: 30px;
