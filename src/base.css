@@ -143,7 +143,7 @@ nav a:hover {
 
 .footer-images img {
     flex: 1;
-    height: 200px;
+    height: 175px;
     object-fit: cover;
     min-width: 0;
 }

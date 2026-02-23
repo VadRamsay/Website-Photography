@@ -4,6 +4,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Home from './Home Page/Home';
 import About from './About Page/About';
+import Contact from './Contact Page/Contact';
 import './base.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </BrowserRouter>
