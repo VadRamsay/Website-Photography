@@ -52,7 +52,7 @@ function Form() {
             </label>
 
             <label>How would you prefer to communicate?
-                <select id="contact_method" name="contact_type" onChange={handleChange}>
+                <select id="contact_type" name="contact_type" onChange={handleChange}>
                     <option value="">Select Option</option>
                     <option value="text">Text Messaging</option>
                     <option value="email">email</option>
