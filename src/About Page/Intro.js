@@ -15,7 +15,7 @@ function Intro() {
                 <img src="/Images/Gabe.jpg" alt="Photographer portrait" />
             </section>
 
-            <a href="/" className="btn-contact">Get in Touch</a>
+            <a href="./Contact" className="btn-contact">Get in Touch</a>
         </section>
     )
 }
