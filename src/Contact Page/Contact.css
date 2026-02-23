@@ -86,17 +86,15 @@
 }
 
 #thank-you {
-    background: #ffd0d0;
-    color: #2c2c2c;
-    padding: 15px;
-    margin: 120px;
-    border-radius: 40px;
+    display: flex;
     text-align: center;
-    font-size: 1.2rem;
-}
-
-.hidden {
-    display: none;
+    justify-content: center;
+    background: #f58484;
+    color: #2c2c2c;
+    padding: 5px;
+    margin: 25px 75px;
+    border-radius: 40px;
+    font-size: 18px;
 }
 
 footer {
