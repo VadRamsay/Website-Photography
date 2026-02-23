@@ -5,6 +5,7 @@ import Footer from './Footer';
 import Home from './Home Page/Home';
 import About from './About Page/About';
 import Contact from './Contact Page/Contact';
+import Pricing from './Pricing Page/Pricing';
 import './base.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/pricing" element={<Pricing />} />
       </Routes>
       <Footer />
     </BrowserRouter>
