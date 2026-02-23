@@ -52,7 +52,8 @@ function Form() {
             </label>
 
             <label>How would you prefer to communicate?
-                <select id="contact_type" name="contact_type" onChange={handleChange}>
+                <select id="contact_type" name="contact_type"
+                    value={formData.contact_type} onChange={handleChange}>
                     <option value="">Select Option</option>
                     <option value="text">Text Messaging</option>
                     <option value="email">email</option>
@@ -60,7 +61,8 @@ function Form() {
             </label>
 
             <label>What type of session are you looking for?
-                <select id="session_type" name="session_type">
+                <select id="session_type" name="session_type"
+                    value={formData.session_type} onChange={handleChange}>
                     <option value="">Select Option</option>
                     <option value="solo">Solo Portraits</option>
                     <option value="couple">Couple</option>
@@ -70,7 +72,8 @@ function Form() {
             </label>
 
             <label>How did you hear about me? ... or you don't have to.
-                <select id="referral" name="referral">
+                <select id="referral" name="referral"
+                    value={formData.referral} onChange={handleChange}>
                     <option value="">Select Option</option>
                     <option value="google">Google Search</option>
                     <option value="friend">From a Friend</option>
@@ -79,7 +82,10 @@ function Form() {
             </label>
 
             <label>Tell Me More!
-                <textarea id="message" name="message" rows="6"></textarea>
+                <textarea id="message" name="message" rows="6"
+                    value={formData.message} onChange={handleChange}>
+                </textarea>
+
             </label>
 
             <button type="submit" className="submit">Send Message</button>
