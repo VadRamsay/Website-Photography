@@ -1,6 +1,5 @@
 import { useState } from 'react'
 
-
 function Form() {
     const [formData, setFormData] = useState({
         firstname: '',
@@ -56,7 +55,7 @@ function Form() {
                     value={formData.contact_type} onChange={handleChange}>
                     <option value="">Select Option</option>
                     <option value="text">Text Messaging</option>
-                    <option value="email">email</option>
+                    <option value="email">Email</option>
                 </select>
             </label>
 
