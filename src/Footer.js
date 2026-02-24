@@ -11,7 +11,7 @@ function Footer() {
 
             <div className="footer-banner">
                 <span><a href="/" style={{ textDecoration: 'none', color: 'inherit' }}>INSTAGRAM</a></span>
-                <span>@SLAV.PHOTOGRAPHY</span>
+                <span>@Slav.Man</span>
             </div>
 
             <p className="copyright">@ Slav Photography</p>
