@@ -1,39 +1,82 @@
-Developed by Gabriel Ramsay, Slav Photography is a clean, professional web platform designed for clients to browse a portfolio, explore service packages, and seamlessly book photography sessions.
+#Slav Photography
 
-## Project Overview:
+Developed by **Gabriel Ramsay**
 
-- This project serves as a digital storefront for a professional photographer. It balances a minimalist aesthetic with functional utility, focusing on a streamlined contact interface and a visual-first portfolio experience.
+A clean, professional photography web platform built with React, designed for clients to browse a portfolio, explore service packages, and seamlessly book photography sessions.
 
-## Functionality:
+---
 
-- Dynamic Portfolio: A curated look at past photography work.
+## Project Overview
 
-- Service Packages: Detailed breakdown of session types (Solo, Couple, Wedding).
+This project serves as a digital storefront for a professional photographer. It balances a minimalist aesthetic with functional utility, focusing on a visual-first portfolio experience and a streamlined client interface.
 
-- Lead Generation Form: A customized contact form with hover-active animations and validation.
+---
 
-- Sticky Navigation: Easy site-wide access regardless of page scroll depth.
+## Features
 
-## Technologies Used:
+- **Dynamic Portfolio** - A curated showcase of past photography work with an interactive carousel gallery.
+- **Service Packages** - Detailed breakdown of session types (Solo, Couple, Wedding)
+- **Contact Form** - Customized lead generation form with hover-active animations and validation
+- **Site-Wide Search** - Real-time search bar filtering across all pages using React state
+- **Sticky Navigation** - Easy site-wide access regardless of page scroll depth
+- **Page Transitions** - Smooth fade-in animations between views
 
-- HTML: Semantic structure for accessibility and SEO.
+---
 
-- CSS: Custom styling featuring Flexbox, CSS Gradients, and Pseudo-element animations.
+## Technologies Used
 
-- Bootstrap: Utilized for core grid stability and responsive components.
+| Technology | Purpose |
+|---|---|
+| **React** | Component-based UI architecture and state management |
+| **React Router** | Client-side routing and navigation |
+| **React Bootstrap** | Responsive carousel and UI components |
+| **JavaScript (ES6+)** | Application logic and interactivity |
+| **CSS3** | Custom styling with Flexbox, gradients, and animations |
+| **HTML5** | Semantic structure|
 
-- JavaScript: Used for form handling and state management.
+---
 
-- JSON: Used for communicating between the browser and server via API.
+## Getting Started
 
-- React
+### Prerequisites
+- Node.js installed on your machine
 
-## Future Enhancements:
+### Installation
 
-- Mobile Responsiveness: Implement CSS Media Queries to optimize the viewing experience for phones and tabblets. 
+```bash
+# Clone the repository
+git clone https://github.com/VadRamsay/static-website.git
 
-- Integrated Payment Gateway: Develop a checkout flow using various APIs to allow clients to pay for packages directly upon booking. *
+# Switch to the React branch
+git checkout react-v2.0
 
-- Enhance Visuals: Implement advanced scroll animations (AOS library as an example) and lazy loading for high-resolution images to improve performance.
+# Install dependencies
+npm install
 
-- Client Gallery Access: Create a password protected area where clients can view and download their specific session photos. (Just an idea)
+# Start the development server
+npm start
+```
+
+The app will open at `http://localhost:3000`.
+
+---
+
+## Future Enhancements
+
+- **Mobile Responsiveness** — Implement CSS Media Queries to optimize the viewing experience across phones and tablets.
+- **Integrated Payment Gateway** — Develop a checkout flow using payment APIs to allow clients to pay for packages directly upon booking.
+- **Client Gallery Access** — Create a password-protected area where clients can view and download their session photos.
+- **Dark Mode** — Add a dark theme toggle for improved viewing experience and to make photos pop.
+
+---
+
+## Version History
+
+| Branch | Description |
+|---|---|
+| `static-v1.0` | Original static site (HTML, CSS, JavaScript) |
+| `react-v2.0` | React rebuild with component architecture |
+
+---
+
+© Slav Photography
