@@ -1,16 +1,10 @@
-.page-container {
-    animation: fadeIn 1.2s ease-in;
-    width: 1200px;
-    margin: 0 auto;
-}
-
 /* Carousel */
 
 .img-container {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 10px 0;
+    padding: 0;
 }
 
 #img-hover:hover {
@@ -56,7 +50,7 @@
 }
 
 .hero-content p {
-    font-size: 1.1rem;
+    font-size: 14px;
     line-height: 1.8;
     color: #555;
     margin-bottom: 30px;

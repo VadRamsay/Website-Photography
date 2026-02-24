@@ -15,15 +15,22 @@
     box-sizing: border-box;
 }
 
-body,
-html {
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 40px;
+}
+
+body {
     overflow-x: hidden;
     background: #ffffff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
     font-family: "Sansation", sans-serif;
     font-weight: 300;
     font-style: italic;
     color: #333;
-    padding: 0 15px;
 }
 
 header {
@@ -50,7 +57,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0px;
+    padding: 20px;
 }
 
 nav ul {
@@ -132,11 +139,12 @@ nav a:hover {
 
 .footer {
     position: relative;
-    padding: 0%;
+    padding: 10px;
     margin-top: 50px;
     max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
+    animation: fadeIn 1.2s ease-in;
 }
 
 .footer-images {

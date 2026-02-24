@@ -1,9 +1,3 @@
-.page-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px 40px;
-}
-
 .hero-price {
     background: url("/public/Images/Shoes.JPG") center/cover no-repeat;
     height: 520px;

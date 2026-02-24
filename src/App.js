@@ -1,12 +1,19 @@
+// Libraries
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+// Layout Comp
 import Header from './Header';
 import Footer from './Footer';
+
+// Pages
 import Home from './Home Page/Home';
 import About from './About Page/About';
 import Contact from './Contact Page/Contact';
 import Pricing from './Pricing Page/Pricing';
 import Portfolio from './Portfolio Page/Portfolio';
+
+// Styles
 import './base.css';
 
 function App() {
