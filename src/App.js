@@ -6,6 +6,7 @@ import Home from './Home Page/Home';
 import About from './About Page/About';
 import Contact from './Contact Page/Contact';
 import Pricing from './Pricing Page/Pricing';
+import Portfolio from './Portfolio Page/Portfolio';
 import './base.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
       <Footer />
     </BrowserRouter>
