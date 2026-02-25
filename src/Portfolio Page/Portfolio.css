@@ -89,10 +89,11 @@
 .search-bar {
     display: flex;
     flex-direction: column;
-    gap: 18px;
-    margin-bottom: 30px;
-    max-width: 300px;
     margin: 0 auto;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    max-width: 300px;
+    gap: 18px;
 }
 
 .search-bar input {

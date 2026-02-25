@@ -1,18 +1,9 @@
 /* Global Styles */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    animation: fadeIn 0.2s ease-in;
 }
 
 .page-container {
@@ -144,7 +135,6 @@ nav a:hover {
     max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
-    animation: fadeIn 1.2s ease-in;
 }
 
 .footer-images {

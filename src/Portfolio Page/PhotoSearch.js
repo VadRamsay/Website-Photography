@@ -13,6 +13,7 @@ function PhotoSearch() {
 
     return (
         <section className="main-search">
+            <h2>Want Ideas? Search Below...</h2>
             <div className="search-bar">
                 <input
                     type="text"
@@ -37,7 +38,7 @@ function PhotoSearch() {
                 ))}
             </div>
 
-        </section>
+        </section >
     )
 }
 
