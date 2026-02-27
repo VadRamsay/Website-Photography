@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Modal.css'
 
 const Columns = ["Inquiry", "Booked", "Shoot Day", "Editing", "Delivered"];
@@ -10,12 +10,16 @@ const initalCards = [
 ];
 
 function Modal() {
+
     const [isOpen, setIsOpen] = useState(false);
 
     return (
         <>
-            <button className="pipeline-btn" onClick={() => setIsOpen(true)}>
-                Business Tracking
+            <button
+                className="pipeline-btn"
+                onClick={() => setIsOpen(true)}
+            >
+                Pipeline
             </button>
 
             {isOpen && (
