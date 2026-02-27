@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Intro() {
     return (
         <section className="about-intro">
@@ -15,7 +17,7 @@ function Intro() {
                 <img src="/Images/Gabe.jpg" alt="Photographer portrait" />
             </section>
 
-            <a href="./Contact" className="btn-contact">Get in Touch</a>
+            <Link to="./Contact" className="btn-contact">Get in Touch</Link>
         </section>
     )
 }

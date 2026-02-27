@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Hero() {
     return (
         <section className="hero">
@@ -9,7 +11,7 @@ function Hero() {
                     I get to share this passion with the world. Photography has a way of helping a person communicate
                     their truest perspective. My desire is to help my clients capture theirs!<br></br>
                 </p>
-                <a href="/Contact" className="contact-btn">Get In Touch</a>
+                <Link to="/Contact" className="contact-btn">Get In Touch</Link>
             </div>
         </section>
     );
