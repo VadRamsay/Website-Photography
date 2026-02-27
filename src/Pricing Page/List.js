@@ -7,7 +7,7 @@ function List() {
 
             <section className="packages-section">
 
-                <div class="package-card">
+                <div className="package-card">
                     <h2>Solo</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores iusto at facere..</p>
                     <h4>Perfect For:</h4>

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const pages = [
     { name: "Portfolio - Landscapes", url: "portfolio", tags: "mountains, city, sun, waves, ideas" },
@@ -21,13 +22,13 @@ function Header() {
     return (
         <header>
             <nav>
-                <a href="/" className="logo">Slav Photography</a>
+                <Link to="/" className="logo">Slav Photography</Link>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/portfolio">Portfolio</a></li>
-                    <li><a href="/pricing">Packages</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/portfolio">Portfolio</Link></li>
+                    <li><Link to="/pricing">Packages</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                     <li className="search-site">
                         <input
                             type="text"
