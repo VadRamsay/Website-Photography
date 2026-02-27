@@ -45,7 +45,7 @@ This project serves as a digital storefront for a professional photographer. It 
 
 ```bash
 # Clone the repository
-git clone https://github.com/VadRamsay/static-website.git
+git clone https://github.com/VadRamsay/react-v2.0.git
 
 # Switch to the React branch
 git checkout react-v2.0
