@@ -1,11 +1,11 @@
 import { useState } from 'react';
 
 const pages = [
-    { name: "Portfolio - Landscapes", url: "/Portfolio/index.html", tags: "mountains, city, sun, waves, ideas" },
-    { name: "Pricing & Packages", url: "/Pricing/", tags: "cost, silver, gold, wedding" },
-    { name: "About Gabe", url: "/About/index.html", tags: "biography, story, freshman" },
-    { name: "Contact Me", url: "/Contact/index.html", tags: "email, phone, booking" },
-    { name: "Home", url: "/Home/index.html", tags: "main, gallery" }
+    { name: "Portfolio - Landscapes", url: "portfolio", tags: "mountains, city, sun, waves, ideas" },
+    { name: "Pricing & Packages", url: "pricing", tags: "cost, silver, gold, wedding" },
+    { name: "About Slav Photography", url: "about", tags: "biography, story, freshman" },
+    { name: "Contact Me", url: "contact", tags: "email, phone, booking" },
+    { name: "Home", url: "/", tags: "main, gallery" }
 ];
 
 function Header() {
@@ -17,14 +17,6 @@ function Header() {
             page.tags.toLowerCase().includes(query.toLowerCase())
         )
     );
-
-    {
-        matches.map(match => (
-            <a key={match.url} href={match.url} className="search-item">
-                <strong>{match.name}</strong>
-            </a>
-        ))
-    }
 
     return (
         <header>
