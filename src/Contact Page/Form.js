@@ -24,8 +24,6 @@ function Form() {
     }
 
 
-
-
     return (
 
         <form className="contact-form" onSubmit={handleSubmit}>
