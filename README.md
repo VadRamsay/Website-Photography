@@ -14,12 +14,12 @@ This project serves as a digital storefront for a professional photographer. It 
 
 ## Features
 
-- **Dynamic Portfolio** - A curated showcase of past photography work with an interactive carousel gallery.
-- **Service Packages** - Detailed breakdown of session types (Solo, Couple, Wedding)
-- **Contact Form** - Customized lead generation form with hover-active animations and validation
-- **Site-Wide Search** - Real-time search bar filtering across all pages using React state
-- **Sticky Navigation** - Easy site-wide access regardless of page scroll depth
-- **Page Transitions** - Smooth fade-in animations between views
+- **Unsplash Integration** - Portfolio and gallery images fetched via the Unsplash API.
+- **Service Packages** - Detailed breakdown of session types (Solo, Couple, Wedding).
+- **Contact Form** - Customized lead generation form with hover-active animations and validation.
+- **Site-Wide Search** - Real-time search bar filtering across all pages using React state.
+- **Sticky Navigation** - Easy site-wide access regardless of page scroll depth.
+- **Page Transitions** - Smooth fade-in animations between pages.
 
 ---
 
@@ -32,7 +32,8 @@ This project serves as a digital storefront for a professional photographer. It 
 | **React Bootstrap** | Responsive carousel and UI components |
 | **JavaScript (ES6+)** | Application logic and interactivity |
 | **CSS3** | Custom styling with Flexbox, gradients, and animations |
-| **HTML5** | Semantic structure|
+| **HTML5** | Structure of Site |
+| **Unsplash API** | Dynamic photo fetching for portfolio and gallery |
 
 ---
 
@@ -63,10 +64,10 @@ The app will open at `http://localhost:3000`.
 
 ## Future Enhancements
 
-- **Mobile Responsiveness** — Implement CSS Media Queries to optimize the viewing experience across phones and tablets.
+- **Mobile Responsiveness** — Implement CSS Media Queries to view across phones and tablets.
 - **Integrated Payment Gateway** — Develop a checkout flow using payment APIs to allow clients to pay for packages directly upon booking.
 - **Client Gallery Access** — Create a password-protected area where clients can view and download their session photos.
-- **Dark Mode** — Add a dark theme toggle for improved viewing experience and to make photos pop.
+- **Dark Mode** — Add a dark theme toggle for improved viewing experience and to make photos stand out. 
 
 ---
 
