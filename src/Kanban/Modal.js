@@ -15,6 +15,7 @@ function Modal() {
     ]);
 
     const [addIn, setAddIn] = useState(null);
+
     const [formData, setFormData] = useState({
         clientName: '',
         shootType: '',
@@ -31,7 +32,7 @@ function Modal() {
         setFormData(prev => ({ ...prev, [name]: value }));
     }
 
-    function handleAddChange(col) {
+    function handleAddCard(col) {
         if (!formData.clientName.trim()) return;
         setCards(prev => [...prev, {
             id: Date.now(),
@@ -81,7 +82,7 @@ function Modal() {
                                             <div className="add-card-form">
                                                 <input
                                                     name="clientName"
-                                                    placerholder="Client Name"
+                                                    placeholder="Client Name"
                                                     value={formData.clientName}
                                                     onChange={handleFormChange}
                                                 />
@@ -103,7 +104,7 @@ function Modal() {
                                                     value={formData.notes}
                                                     onChange={handleFormChange}
                                                 />
-                                                <button onClick={() => handleAddChange(col)}>Add</button>
+                                                <button onClick={() => handleAddCard(col)}>Add</button>
                                                 <button onClick={() => setAddIn(null)}>Cancel</button>
                                             </div>
                                         )}
