@@ -23,16 +23,16 @@ function Modal() {
         notes: '',
     });
 
-    function handleDelete(id) {
+    function HandleDelete(id) {
         setCards(cards.filter((card) => card.id !== id));
     }
 
-    function handleFormChange(e) {
+    function HandleFormChange(e) {
         const { name, value } = e.target;
         setFormData(prev => ({ ...prev, [name]: value }));
     }
 
-    function handleAddCard(col) {
+    function HandleAddCard(col) {
         if (!formData.clientName.trim()) return;
         setCards(prev => [...prev, {
             id: Date.now(),
@@ -75,7 +75,7 @@ function Modal() {
                                                 <p><strong>{card.clientName}</strong></p>
                                                 <p>{card.shootType} — {card.shootDate}</p>
                                                 <p>{card.notes}</p>
-                                                <button onClick={() => handleDelete(card.id)}>Delete</button>
+                                                <button onClick={() => HandleDelete(card.id)}>Delete</button>
                                             </div>
                                         ))}
                                         {addIn === col && (
@@ -84,27 +84,27 @@ function Modal() {
                                                     name="clientName"
                                                     placeholder="Client Name"
                                                     value={formData.clientName}
-                                                    onChange={handleFormChange}
+                                                    onChange={HandleFormChange}
                                                 />
                                                 <input
                                                     name="shootType"
                                                     placeholder='Shoot Type'
                                                     value={formData.shootType}
-                                                    onChange={handleFormChange}
+                                                    onChange={HandleFormChange}
                                                 />
                                                 <input
                                                     name="shootDate"
                                                     placeholder='Shoot Date'
                                                     value={formData.shootDate}
-                                                    onChange={handleFormChange}
+                                                    onChange={HandleFormChange}
                                                 />
                                                 <input
                                                     name="notes"
                                                     placeholder="Notes"
                                                     value={formData.notes}
-                                                    onChange={handleFormChange}
+                                                    onChange={HandleFormChange}
                                                 />
-                                                <button onClick={() => handleAddCard(col)}>Add</button>
+                                                <button onClick={() => HandleAddCard(col)}>Add</button>
                                                 <button onClick={() => setAddIn(null)}>Cancel</button>
                                             </div>
                                         )}

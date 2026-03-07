@@ -5,7 +5,7 @@ function PhotoSearch() {
     const [photos, setPhotos] = useState([]); // holds the results
 
     // Fetch function
-    function searchPhotos() {
+    function SearchPhotos() {
         fetch(`https://api.unsplash.com/search/photos?query=${query}&per_page=8&client_id=TPeoBJ2BnMz3HFXhIj8PhKIhf1N8pJi4tYfoVXNVjwM`)
             .then(response => response.json())
             .then(data => setPhotos(data.results));
@@ -21,7 +21,7 @@ function PhotoSearch() {
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                 />
-                <button onClick={searchPhotos}>Search</button>
+                <button onClick={SearchPhotos}>Search</button>
             </div>
 
             <div className="photo-results">
