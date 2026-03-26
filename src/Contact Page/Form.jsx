@@ -18,11 +18,29 @@ function Form() {
         setFormData(prev => ({ ...prev, [name]: value }))
     }
 
-    function HandleSubmit(e) {
+    async function HandleSubmit(e) {
         e.preventDefault();
-        setSubmitted(true)
-    }
+        console.log("form submitted!", formData)
 
+        try {
+            console.log("sending some data...")
+            const response = await fetch('http://localhost:5000/api/contacts', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    name: formData.firstname,
+                    email: formData.email,
+                    message: formData.message
+                })
+            })
+
+            if (response.ok) {
+                setSubmitted(true)
+            }
+        } catch (err) {
+            console.log('Error submitting form:', err)
+        }
+    }
 
     return (
 
